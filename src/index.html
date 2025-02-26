@@ -5,10 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel ="shortcut icon" href="#" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-    <script type="module" src="./main.js"></script>
     <script type="module" src="./main.ts"></script>
-    <title>Parcel Template</title>
+    <title>Book List</title>
 </head>
 <body>
+    <h1>Book List</h1>
+    <form id="add-book-form">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="writer" placeholder="Writer" required>
+        <button type="submit">Add Book</button>
+    </form>
+    <ul id="book-list">
+        <li id="book-template" class="hidden">
+            <h2 class="book-title"></h2>
+            <p class="book-writer"></p>
+            <p class="book-status"></p>
+            <p class="book-review"></p>
+            <button class="mark-as-read hidden">Mark as Read</button>
+            <button class="like hidden">Like</button>
+            <button class="dislike hidden">Dislike</button>
+            <button class="delete hidden">Delete</button>
+        </li>
+    </ul>
 </body>
 </html>

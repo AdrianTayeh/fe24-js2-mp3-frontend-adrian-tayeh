@@ -1,0 +1,19 @@
+.read {
+    color: green;
+}
+
+.unread {
+    color: red;
+}
+
+.liked {
+    font-weight: bold;
+}
+
+.disliked {
+    text-decoration: line-through !important;
+}
+
+.hidden {
+    display: none;
+}
